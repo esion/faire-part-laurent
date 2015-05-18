@@ -24,9 +24,10 @@ angular.module( 'ngBoilerplate.hangman', [
     for(i = 97; i <= 122; i++) {
         ctrl.alphabet.push(String.fromCharCode(i));
     }
+    ctrl.alphabet.push("é");
 
     //generate this with angular.each("text", function(letter) { hidden.push(letter.charCodeAt(0)); });
-    var hidden = [115, 111, 108, 97, 108];
+    var hidden = [108,233,97,110,100,114,101];
     ctrl.userFound = [];
     for (i = 0; i < hidden.length; i++) {
         ctrl.userFound.push("");
@@ -44,8 +45,8 @@ angular.module( 'ngBoilerplate.hangman', [
         }
     };
 
-    ctrl.birthdate = "21 novembre 2014";
-    ctrl.subtext = "3,055Kg - 49cm";
+    ctrl.birthdate = "16 mai 2015 à 15h35";
+    ctrl.subtext = "3kg870";
     ctrl.pictureProportion = 1024/793;
 })
 
